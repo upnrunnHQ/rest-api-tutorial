@@ -2,17 +2,15 @@
 
 I hope you've heard about the WordPress rest API. WordPress rest API provides some endpoints which you can use to fetch data from your WordPress site.
 
-Imagine that you are planning to create a mobile app for your WordPress blog. The job of the mobile app is to display your latest blog posts. Since you're a frontend developer, make Htttp request using javascript to get recent posts from your WordPress through the REST AP.
+Imagine that you are planning to create a mobile app for your WordPress blog. The job of the mobile app is to display your latest blog posts. But the problem is that when you make http request to receive recent posts, you will find many fields in the rest API response. You don't need all of these fields for your app and sometimes you will need some extra fields which are not returned by default in API response.
 
-But the problem is that when you make http request to receive recent posts, you will find many fields in the rest API response. You don't need all of these fields and sometimes you will need some extra fields which are not returned by default in API response.
-
-So, what can you do in such a situation? Yeah, don't be panic. it's really easy extending WordPress rest API as your need. The purpose of this blog post is to show you how to extend WordPress rest API. I will divide this post into several parts, this will help you to move forward step by step.
+So, what can you do in such a situation? Yeah, don't be panic. it's really easy extending WordPress rest API as your need. The purpose of this tutorial is to show you how to extend WordPress rest API. I will divide this tutorial into several parts, this will help you to move forward step by step.
 
 ## Create A Plugin
 
-Let's get started. First, I am going to create a basic plugin where I can save all of my codes. This is the best way to extend WordPress functionality or add unique features to your WordPress site.
+Before we get started. First, I am going to create a basic plugin where I can save all of my codes. This is the best way to extend WordPress functionality or add unique features to your WordPress site.
 
-To create a plugin folder called "rest-api-tutorial" where we will save all of our plugin files. Inside that folder create a file "rest-api-tutorial.php" with the following code.
+To create a plugin create folder called "rest-api-tutorial" where we will save all of our plugin files. Inside that folder create a file "rest-api-tutorial.php" with the following code.
 
 ```php
 /**
