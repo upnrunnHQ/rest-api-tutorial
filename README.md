@@ -44,7 +44,7 @@ function rest_tutorial() {
 $GLOBALS['rest_tutorial'] = rest_tutorial();
 ```
 
-Now create another file called "class-rest-api-tutorial.php" in the includes/ folder to using the following code.
+Now create another file called "class-rest-api-tutorial.php" in the includes/ folder using the following code. This is our main plugin class.
 
 ```php
 <?php
@@ -83,4 +83,4 @@ class Rest_Api_Tutorial {
 }
 ```
 
-Our plugin is now ready. In the next part, I will explain how to modify WordPress rest API response.
+Finally our plugin is ready. In the next part, I will explain how to modify WordPress rest API response.
