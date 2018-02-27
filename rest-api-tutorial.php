@@ -23,8 +23,8 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-rest-api-tutorial.php';
 
 // Main instance of plugin.
 function rest_tutorial() {
-    return rest_tutorial::get_instance();
+    return Rest_Api_Tutorial::get_instance();
 }
 
 // Global for backwards compatibility.
-$GLOBALS['rest_tutorial'] = rest_tutorial();;
+$GLOBALS['rest_tutorial'] = rest_tutorial();

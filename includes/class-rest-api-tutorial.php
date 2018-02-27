@@ -29,8 +29,8 @@ class Rest_Api_Tutorial {
     }
 
     // Includes
-    public function register_post_meta() {
+    public function includes() {
         include_once REST_API_TUTORIAL_PLUGIN_DIR . '/parts/part-1/method-1.php';
-        include_once REST_API_TUTORIAL_PLUGIN_DIR . '/parts/part-1/method-2.php';
+        // include_once REST_API_TUTORIAL_PLUGIN_DIR . '/parts/part-1/method-2.php';
     }
 }
